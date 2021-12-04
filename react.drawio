@@ -1,10 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2021-12-04T08:01:21.553Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="kPVko-OsI0hGKDAsTlZk" version="15.8.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-04T08:28:09.249Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="1kf9a1GljTyGYkkNBYuD" version="15.8.7" type="github" pages="4">
   <diagram id="47tLUaaesKJBdRlElNih" name="Page-1">
-    <mxGraphModel dx="2100" dy="1416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2595" dy="1621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="IwJ-DoMgyUUQBhexiGf5-1" value="state的批量更新在此" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-19" value="" style="swimlane;startSize=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="530" y="-120" width="287" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-20" value="1. 老的vdom和新的vdom都没有值" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-19">
+          <mxGeometry y="10" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-23" value="2. 老的vdom有，新的没--删除老节点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-19">
+          <mxGeometry x="2" y="40" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-32" value="3. 老的没有，新的有，插入" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-19">
+          <mxGeometry x="2" y="70" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-36" value="&lt;font color=&quot;#000000&quot;&gt;4. 老的有，新的有，但是类型不一样，&lt;br&gt;旧的删除，新的插入&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-19">
+          <mxGeometry x="10" y="100" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-49" value="updateElement" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-19">
+          <mxGeometry x="162" y="130" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-48" value="5. 老的有，新的有，类型一样" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-19">
+          <mxGeometry x="7" y="140" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-104" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-19">
+          <mxGeometry x="254.5" y="3.75" width="32.5" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="IwJ-DoMgyUUQBhexiGf5-1" value="state的批量更新在此" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="1200" y="414" width="120" height="44" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-6" value="Vdom" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
@@ -65,7 +89,7 @@
         <mxCell id="weNoOUtVQdzom_qqq5Kr-70" value="2)处理children" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#331A00;" parent="weNoOUtVQdzom_qqq5Kr-21" vertex="1">
           <mxGeometry x="209.13" y="122" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-2" value="此处把dom挂在ref.current上" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="weNoOUtVQdzom_qqq5Kr-21" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-2" value="此处把dom挂在ref.current上" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-21">
           <mxGeometry x="254.69" y="212" width="115.31" height="60" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-24" value="" style="swimlane;startSize=0;align=left;" parent="1" vertex="1">
@@ -103,13 +127,13 @@
         <mxCell id="weNoOUtVQdzom_qqq5Kr-42" value="type" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="960" y="450" width="240" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-81" value="&amp;nbsp;react_provide: mountProviderComponent" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=none;fontColor=#331A00;rounded=0;" parent="weNoOUtVQdzom_qqq5Kr-42" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-81" value="&amp;nbsp;react_provide: mountProviderComponent" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=none;fontColor=#331A00;rounded=0;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-42">
           <mxGeometry y="26" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-83" value="react_consumer: mountProviderConsumer" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="weNoOUtVQdzom_qqq5Kr-42" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-83" value="react_consumer: mountProviderConsumer" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-42">
           <mxGeometry y="46" width="240" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-82" value="react_forwardRef:" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="weNoOUtVQdzom_qqq5Kr-42" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-82" value="react_forwardRef:" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-42">
           <mxGeometry y="72" width="240" height="26" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-43" value="text：直接创建textNode" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="weNoOUtVQdzom_qqq5Kr-42" vertex="1">
@@ -244,10 +268,10 @@
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-25" value="classInstance.oldRenderVdom = renderVdom" style="text;whiteSpace=wrap;html=1;fontColor=#331A00;" parent="weNoOUtVQdzom_qqq5Kr-94" vertex="1">
           <mxGeometry x="35" y="134" width="265" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-3" value="实例创建后，挂在ref.current上" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="weNoOUtVQdzom_qqq5Kr-94" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-3" value="实例创建后，挂在ref.current上" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-94">
           <mxGeometry x="267.5" y="70" width="115.31" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-17" value="执行componentWillMount" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="weNoOUtVQdzom_qqq5Kr-94" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-17" value="执行componentWillMount" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-94">
           <mxGeometry x="267.5" y="154" width="142.81" height="60" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-99" value="mountClassComponent：创建类组件的dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="1" vertex="1">
@@ -268,10 +292,10 @@
         <mxCell id="weNoOUtVQdzom_qqq5Kr-20" value="=" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="weNoOUtVQdzom_qqq5Kr-102" vertex="1">
           <mxGeometry x="77" y="103" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-14" value="2. 挂载： parentDOM.appendChild(真实dom)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="weNoOUtVQdzom_qqq5Kr-102" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-14" value="2. 挂载： parentDOM.appendChild(真实dom)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-102">
           <mxGeometry y="154" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-15" value="执行componentDidMount" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="weNoOUtVQdzom_qqq5Kr-102" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-15" value="执行componentDidMount" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="weNoOUtVQdzom_qqq5Kr-102">
           <mxGeometry x="30" y="184" width="175" height="40" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-109" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontColor=#331A00;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.081;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="weNoOUtVQdzom_qqq5Kr-106" target="weNoOUtVQdzom_qqq5Kr-102" edge="1">
@@ -352,7 +376,7 @@
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-36" value="5. 比较完之后将新的vdom代替老的vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-29" vertex="1">
           <mxGeometry x="15" y="110" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-11" value="&lt;font color=&quot;#000000&quot;&gt;6. 在更新完毕之后，&lt;br&gt;判断是否有componentDidupdate&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" parent="-YzyJ1zUxsTawbq-KKdj-29" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-11" value="&lt;font color=&quot;#000000&quot;&gt;6. 在更新完毕之后，&lt;br&gt;判断是否有componentDidupdate&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="-YzyJ1zUxsTawbq-KKdj-29">
           <mxGeometry x="22" y="132" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-34" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontColor=#331A00;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.114;exitY=-0.067;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-YzyJ1zUxsTawbq-KKdj-15" target="-YzyJ1zUxsTawbq-KKdj-29" edge="1">
@@ -388,225 +412,255 @@
             <mxPoint x="1610" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-5" value="shouldUpdate" style="swimlane;fontStyle=0" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-5" value="shouldUpdate" style="swimlane;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="1285" y="530" width="260" height="185" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-6" value="1. 判断有没有shouldComponentUpdate方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="__hmejqqHvT5zN9v6oVc-5" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-6" value="1. 判断有没有shouldComponentUpdate方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
           <mxGeometry y="35.5" width="250" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-7" value="2. 判断有没有componentWillUpdate方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="__hmejqqHvT5zN9v6oVc-5" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-7" value="2. 判断有没有componentWillUpdate方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
           <mxGeometry y="62" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-8" value="3.&amp;nbsp;&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;&amp;nbsp;先把新状态赋给类的实例上&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;classInstance.state = nextState;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="__hmejqqHvT5zN9v6oVc-5" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-8" value="3.&amp;nbsp;&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;&amp;nbsp;先把新状态赋给类的实例上&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;classInstance.state = nextState;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
           <mxGeometry x="-6" y="90" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-9" value="4. 根据之前的结果，更新&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;强制更新：&lt;br&gt;classInstance.forceUpdate()&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="__hmejqqHvT5zN9v6oVc-5" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-9" value="4. 根据之前的结果，更新&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;强制更新：&lt;br&gt;classInstance.forceUpdate()&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
           <mxGeometry y="130" width="210" height="30" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-16" value="把虚拟dom转换成真实dom，追加到容器上" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="730" y="120" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-16" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=0.421;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="__hmejqqHvT5zN9v6oVc-3" edge="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-16" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=0.421;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="__hmejqqHvT5zN9v6oVc-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1600" y="910" as="sourcePoint" />
             <mxPoint x="1600" y="900" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-18" value="dom-diff" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-18" value="dom-diff" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="887" y="10" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-19" value="" style="swimlane;startSize=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="520" y="-120" width="287" height="210" as="geometry" />
-        </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-20" value="1. 老的vdom和新的vdom都没有值" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-19" vertex="1">
-          <mxGeometry y="10" width="200" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-23" value="2. 老的vdom有，新的没--删除老节点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-19" vertex="1">
-          <mxGeometry x="2" y="40" width="210" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-32" value="3. 老的没有，新的有，插入" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-19" vertex="1">
-          <mxGeometry x="2" y="70" width="160" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-36" value="&lt;font color=&quot;#000000&quot;&gt;4. 老的有，新的有，但是类型不一样，&lt;br&gt;旧的删除，新的插入&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" parent="__hmejqqHvT5zN9v6oVc-19" vertex="1">
-          <mxGeometry x="10" y="100" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-49" value="updateElement" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="__hmejqqHvT5zN9v6oVc-19" vertex="1">
-          <mxGeometry x="177" y="130" width="110" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-48" value="5. 老的有，新的有，类型一样" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-19" vertex="1">
-          <mxGeometry x="7" y="140" width="170" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-21" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;entryX=1.02;entryY=0.405;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="__hmejqqHvT5zN9v6oVc-18" target="__hmejqqHvT5zN9v6oVc-19" edge="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-21" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;entryX=1.02;entryY=0.405;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="__hmejqqHvT5zN9v6oVc-18" target="__hmejqqHvT5zN9v6oVc-19">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="870" y="150" as="sourcePoint" />
             <mxPoint x="920" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-22" value="老的vdom和新的vdom对比，找出差异，&lt;br&gt;然后把这些差异最小化同步到真实的dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="520" y="-160" width="230" height="30" as="geometry" />
+        <mxCell id="__hmejqqHvT5zN9v6oVc-22" value="compareTwoVdom：老的vdom和新的vdom对比，找出差异，&lt;br&gt;然后把这些差异最小化同步到真实的dom" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="508.5" y="-150" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-25" value="" style="swimlane;startSize=0;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-25" value="" style="swimlane;startSize=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="830" y="-250" width="200" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-27" value="1. 解构type,ref,props = vdom;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-25" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-27" value="1. 解构type,ref,props = vdom;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-25">
           <mxGeometry x="5" y="28" width="170" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-28" value="2. 通过vdom找到真实的dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-25" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-28" value="2. 通过vdom找到真实的dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-25">
           <mxGeometry x="5" y="48" width="170" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-29" value="3. 执行componentWillUnmount" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-25" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-29" value="3. 执行componentWillUnmount" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-25">
           <mxGeometry x="5" y="68" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-30" value="4. ref.current = null" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-25" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-30" value="4. ref.current = null" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-25">
           <mxGeometry x="3" y="88" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-31" value="5. 递归unmountVdomchildren" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-25" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-31" value="5. 递归unmountVdomchildren" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-25">
           <mxGeometry x="6" y="108" width="170" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-38" value="参数：vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-25" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-38" value="参数：vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-25">
           <mxGeometry x="20" y="8" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-26" value="unMountVdom：删除旧dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-26" value="unMountVdom：删除旧dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="820" y="-270" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-33" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#FF0000;entryX=-0.008;entryY=0.051;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="weNoOUtVQdzom_qqq5Kr-91" target="-YzyJ1zUxsTawbq-KKdj-2" edge="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-33" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#FF0000;entryX=-0.008;entryY=0.051;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="weNoOUtVQdzom_qqq5Kr-91" target="-YzyJ1zUxsTawbq-KKdj-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1220" y="250" as="sourcePoint" />
             <mxPoint x="1270" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-37" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;entryX=-0.02;entryY=0.164;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.995;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="__hmejqqHvT5zN9v6oVc-23" target="__hmejqqHvT5zN9v6oVc-25" edge="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-37" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;entryX=-0.02;entryY=0.164;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.995;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="__hmejqqHvT5zN9v6oVc-23" target="__hmejqqHvT5zN9v6oVc-25">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="670" y="-10" as="sourcePoint" />
             <mxPoint x="720" y="-60" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-41" value="" style="swimlane;startSize=0;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-41" value="" style="swimlane;startSize=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="190" y="-140" width="290" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-43" value="参数： parentDOM，vdom，nextDOM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-41" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-43" value="参数： parentDOM，vdom，nextDOM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-41">
           <mxGeometry y="20" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-44" value="1. 如果有nextDom，把新的dom插入其之前" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-41" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-44" value="1. 如果有nextDom，把新的dom插入其之前" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-41">
           <mxGeometry x="7" y="50" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-45" value="2. 如果没有nextDom，直接把新的dom插入父节点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-41" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-45" value="2. 如果没有nextDom，直接把新的dom插入父节点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-41">
           <mxGeometry x="5" y="80" width="280" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-46" value="3. 如果新dom有componentDidMount，则执行。&lt;br&gt;因为只要dom挂载后，就会执行didMount" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-41" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-46" value="3. 如果新dom有componentDidMount，则执行。&lt;br&gt;因为只要dom挂载后，就会执行didMount" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-41">
           <mxGeometry x="5" y="106" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-42" value="mountVdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="182.5" y="-170" width="80" height="20" as="geometry" />
+        <mxCell id="__hmejqqHvT5zN9v6oVc-42" value="mountVdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="182.5" y="-160" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-51" value="updateElement" style="swimlane;fontColor=#FF0000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-51" value="updateElement" style="swimlane;fontColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="460" y="-430" width="320" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-54" value="参数： oldVdom, newVdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-51" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-54" value="参数： oldVdom, newVdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-51">
           <mxGeometry x="10" y="30" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-55" value="1. 如果都是文本，借用以前的dom节点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-51" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-55" value="1. 如果都是文本，借用以前的dom节点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-51">
           <mxGeometry y="60" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-56" value="2. 如果是字符串，拿到老的dom复用&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1）拿到老dom，赋值给新dom&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2）通过updateProps更新属性&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3）updateChildren递归儿子&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-51" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-56" value="2. 如果是字符串，拿到老的dom复用&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1）拿到老dom，赋值给新dom&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2）通过updateProps更新属性&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3）updateChildren递归儿子&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-51">
           <mxGeometry y="85" width="210" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-57" value="3. 如果是函数&amp;nbsp;&amp;nbsp;&lt;br&gt;1）如果都类组件，将oldVdom.classInstance赋值&lt;br&gt;给新vdom的classInstance,执行updateClassComponent&lt;br&gt;2)&amp;nbsp; 如果是函数组件，执行updateFunctionComponent" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-51" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-57" value="3. 如果是函数&amp;nbsp;&amp;nbsp;&lt;br&gt;1）如果都类组件，将oldVdom.classInstance赋值&lt;br&gt;给新vdom的classInstance,执行updateClassComponent&lt;br&gt;2)&amp;nbsp; 如果是函数组件，执行updateFunctionComponent" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-51">
           <mxGeometry x="5" y="160" width="310" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-52" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontColor=#FF0000;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.773;exitY=0.075;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="__hmejqqHvT5zN9v6oVc-49" target="__hmejqqHvT5zN9v6oVc-51" edge="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-52" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontColor=#FF0000;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.773;exitY=0.075;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="__hmejqqHvT5zN9v6oVc-49" target="__hmejqqHvT5zN9v6oVc-51">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="540" y="-100" as="sourcePoint" />
             <mxPoint x="590" y="-150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-53" value="&lt;font color=&quot;#000000&quot;&gt;updateElement: 比较久的vdom和新的vdom，进行diff&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-53" value="&lt;font color=&quot;#000000&quot;&gt;updateElement: 比较久的vdom和新的vdom，进行diff&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="455" y="-460" width="300" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-59" value="updateProps" style="swimlane;fontColor=#331A00;align=center;verticalAlign=top;fontStyle=0" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-59" value="updateProps" style="swimlane;fontColor=#331A00;align=center;verticalAlign=top;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="200" y="662" width="292.5" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-60" value="参数：dom,lodProps,newProps" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="__hmejqqHvT5zN9v6oVc-59" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-60" value="参数：dom,lodProps,newProps" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-59">
           <mxGeometry x="5" y="30" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-61" value="1. children先不做处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="__hmejqqHvT5zN9v6oVc-59" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-61" value="1. children先不做处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-59">
           <mxGeometry x="5" y="70" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-62" value="3. 将旧的props从dom上删除" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="__hmejqqHvT5zN9v6oVc-59" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-62" value="3. 将旧的props从dom上删除" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-59">
           <mxGeometry x="5" y="140" width="170" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-63" value="2. 将新的props加载到dom上&lt;br&gt;1）如果是style，直接加在dom上&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;2）如果是事件处理函数，通过addEvent进行委托&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="__hmejqqHvT5zN9v6oVc-59" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-63" value="2. 将新的props加载到dom上&lt;br&gt;1）如果是style，直接加在dom上&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;2）如果是事件处理函数，通过addEvent进行委托&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-59">
           <mxGeometry x="12.5" y="90" width="280" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-64" value="updateProps：更新dom的属性" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#331A00;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-64" value="updateProps：更新dom的属性" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#331A00;" vertex="1" parent="1">
           <mxGeometry x="252.5" y="642" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-65" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontColor=#331A00;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="__hmejqqHvT5zN9v6oVc-64" target="weNoOUtVQdzom_qqq5Kr-57" edge="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-65" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontColor=#331A00;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="__hmejqqHvT5zN9v6oVc-64" target="weNoOUtVQdzom_qqq5Kr-57">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="182.5" y="750" as="sourcePoint" />
             <mxPoint x="262.07000000000016" y="751" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-66" value="dispatchEvent" style="swimlane;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-66" value="dispatchEvent" style="swimlane;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-350" y="790" width="240" height="114" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-67" value="1. 解构target,type" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-66" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-67" value="1. 解构target,type" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-66">
           <mxGeometry x="12" y="34" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-68" value="2. 制作合成事件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-66" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-68" value="2. 制作合成事件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-66">
           <mxGeometry x="13" y="54" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-69" value="3. 冒泡，&lt;br&gt;使最底层的事件冒泡，依次处理handler" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-66" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-69" value="3. 冒泡，&lt;br&gt;使最底层的事件冒泡，依次处理handler" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-66">
           <mxGeometry x="20" y="74" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-70" value="addEvent" style="swimlane;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-70" value="addEvent" style="swimlane;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-74.5" y="800" width="244.5" height="98" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-71" value="2. 将dispatchEvent挂载到dom的event上" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-70" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-71" value="2. 将dispatchEvent挂载到dom的event上" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-70">
           <mxGeometry x="4.5" y="65" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-72" value="&lt;font color=&quot;#000000&quot;&gt;1. 将自己的事件绑定在dom.store里&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" parent="__hmejqqHvT5zN9v6oVc-70" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-72" value="&lt;font color=&quot;#000000&quot;&gt;1. 将自己的事件绑定在dom.store里&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-70">
           <mxGeometry x="4.5" y="38" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-73" value="处理事件绑定事件" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-73" value="处理事件绑定事件" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-80" y="780" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-74" value="updateClassComponent" style="swimlane;fontColor=#000000;strokeColor=#000000;startSize=23;fontStyle=0" parent="1" vertex="1">
-          <mxGeometry x="160" y="-420" width="232.5" height="110" as="geometry" />
+        <mxCell id="__hmejqqHvT5zN9v6oVc-74" value="updateClassComponent" style="swimlane;fontColor=#000000;strokeColor=#000000;startSize=23;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="98.75" y="-640" width="232.5" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-75" value="1. 将旧vdom的classInstance放置&lt;br&gt;到新的vdom上" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-74" vertex="1">
-          <mxGeometry x="10" y="35" width="190" height="30" as="geometry" />
+        <mxCell id="__hmejqqHvT5zN9v6oVc-75" value="1. 将旧vdom的classInstance放置&lt;br&gt;到新的vdom上" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-74">
+          <mxGeometry x="10" y="60" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-76" value="2. 执行componentWillReceivePrpos函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-74" vertex="1">
-          <mxGeometry x="2.5" y="77" width="230" height="20" as="geometry" />
+        <mxCell id="__hmejqqHvT5zN9v6oVc-76" value="2. 执行componentWillReceivePrpos函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-74">
+          <mxGeometry x="2.5" y="100" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="IwJ-DoMgyUUQBhexiGf5-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="-YzyJ1zUxsTawbq-KKdj-29" target="__hmejqqHvT5zN9v6oVc-9" edge="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-102" value="参数：oldvDom,newVdom" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-74">
+          <mxGeometry x="10" y="30" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IwJ-DoMgyUUQBhexiGf5-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-YzyJ1zUxsTawbq-KKdj-29" target="__hmejqqHvT5zN9v6oVc-9">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1330" y="410" as="sourcePoint" />
             <mxPoint x="1300" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-85" value="mountProviderComponent" style="swimlane;rounded=0;fontColor=#000000;strokeColor=default;fontStyle=0" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-85" value="mountProviderComponent" style="swimlane;rounded=0;fontColor=#000000;strokeColor=default;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="797" y="924" width="220" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-89" value="参数：vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-85" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-89" value="参数：vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-85">
           <mxGeometry x="13" y="36" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-90" value="1. 解构type,props" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-85" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-90" value="1. 解构type,props" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-85">
           <mxGeometry y="66" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-91" value="2.&amp;nbsp; context = type._context" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-85" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-91" value="2.&amp;nbsp; context = type._context" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-85">
           <mxGeometry y="96" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-92" value="3. context._currentValue = proprs.value" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-85" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-92" value="3. context._currentValue = proprs.value" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-85">
           <mxGeometry y="126" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-93" value="4. let renderVdom = props.children" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="__hmejqqHvT5zN9v6oVc-85" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-93" value="4. let renderVdom = props.children" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-85">
           <mxGeometry y="156" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="__hmejqqHvT5zN9v6oVc-87" value="mountConsumerComponent" style="swimlane;rounded=0;fontColor=#000000;strokeColor=default;fontStyle=0" parent="1" vertex="1">
+        <mxCell id="__hmejqqHvT5zN9v6oVc-87" value="mountConsumerComponent" style="swimlane;rounded=0;fontColor=#000000;strokeColor=default;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="1020" y="924" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-94" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontColor=#000000;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="__hmejqqHvT5zN9v6oVc-74" target="__hmejqqHvT5zN9v6oVc-51">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="-200" as="sourcePoint" />
+            <mxPoint x="520" y="-250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-95" value="updateFunctionComponent" style="swimlane;rounded=0;fontColor=#000000;strokeColor=default;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="117.5" y="-380" width="222.5" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-97" value="1. 获取老的真实的dom的父节点&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-95">
+          <mxGeometry x="2.5" y="55" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-98" value="2.&amp;nbsp; 解构newVdom获取type和props" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-95">
+          <mxGeometry x="2.5" y="80" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-100" value="3. 通过type和props获取新的dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-95">
+          <mxGeometry y="110" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-101" value="4. 通过compareTwoVdom来对比" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-95">
+          <mxGeometry y="140" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-96" value="&amp;nbsp;参数： oldVdom，newVdom&lt;br&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="-350" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-103" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="590" width="32.5" height="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-105" value="Diff" style="swimlane;rounded=0;fontColor=#CC0000;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="800" y="-520" width="255" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-106" value="&lt;font color=&quot;#33001a&quot;&gt;1. 构建一个map，将老的dom放进去&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CC0000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-105">
+          <mxGeometry x="7" y="40" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-110" value="&lt;font color=&quot;#33001a&quot;&gt;2. 遍历新的儿子数组，用key找，&lt;br&gt;有没有一样的key，更新属性&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CC0000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-105">
+          <mxGeometry y="70" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-112" value="3. indexPlacedIndex= 0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#33001A;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-105">
+          <mxGeometry x="7" y="107" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-108" value="&lt;font color=&quot;#cc0000&quot;&gt;&amp;nbsp;不同的类型会产出不同的结构，不会复用&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#33001A;" vertex="1" parent="1">
+          <mxGeometry x="1066.5" y="-488" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-109" value="&lt;font color=&quot;#cc0000&quot;&gt;可以通过key来唯一标识一个元素&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#33001A;" vertex="1" parent="1">
+          <mxGeometry x="1065" y="-466" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-107" value="&lt;font color=&quot;#cc0000&quot;&gt;只比较和复用同级节点&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#33001A;" vertex="1" parent="1">
+          <mxGeometry x="1062" y="-510" width="140" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
