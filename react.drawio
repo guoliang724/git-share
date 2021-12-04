@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-12-04T08:28:09.249Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="1kf9a1GljTyGYkkNBYuD" version="15.8.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-04T10:02:36.086Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="mvT7qyphgiPbsOl2oaMu" version="15.8.7" type="github" pages="4">
   <diagram id="47tLUaaesKJBdRlElNih" name="Page-1">
-    <mxGraphModel dx="2595" dy="1621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2100" dy="1416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="__hmejqqHvT5zN9v6oVc-116" value="合并" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fontSize=12;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="427.85" width="110" height="40" as="geometry" />
+        </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-19" value="" style="swimlane;startSize=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="530" y="-120" width="287" height="180" as="geometry" />
         </mxCell>
@@ -29,7 +32,7 @@
           <mxGeometry x="254.5" y="3.75" width="32.5" height="32.5" as="geometry" />
         </mxCell>
         <mxCell id="IwJ-DoMgyUUQBhexiGf5-1" value="state的批量更新在此" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="1200" y="414" width="120" height="44" as="geometry" />
+          <mxGeometry x="1634" y="-60" width="120" height="38" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-6" value="Vdom" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="42.5" y="450" width="50" height="20" as="geometry" />
@@ -239,7 +242,7 @@
           <mxGeometry y="230" width="290" height="30" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-94" value="mountClassComponent" style="swimlane;fontColor=#331A00;align=center;verticalAlign=top;fontStyle=0" parent="1" vertex="1">
-          <mxGeometry x="1285" y="746" width="382.81" height="214" as="geometry" />
+          <mxGeometry x="1285" y="747" width="382.81" height="214" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-95" value="参数：vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="weNoOUtVQdzom_qqq5Kr-94" vertex="1">
           <mxGeometry x="20" y="30" width="80" height="20" as="geometry" />
@@ -275,7 +278,7 @@
           <mxGeometry x="267.5" y="154" width="142.81" height="60" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-99" value="mountClassComponent：创建类组件的dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="726" width="250" height="20" as="geometry" />
+          <mxGeometry x="1200" y="727" width="250" height="20" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-102" value="mount" style="swimlane;fontColor=#FF0000;align=center;verticalAlign=top;fontStyle=1;swimlaneFillColor=default;" parent="1" vertex="1">
           <mxGeometry x="720" y="146" width="260" height="230" as="geometry" />
@@ -319,7 +322,7 @@
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-5" value="+ addState: 加入pendingStates&#xa;队列，执行emitUpdate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-2" vertex="1">
           <mxGeometry y="110" width="247" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="-YzyJ1zUxsTawbq-KKdj-6" value="+ emitUpdate：判断是同步还是异步,&#xa; 1）若是同步，直接执行updateComponent&#xa;2）若是异步，向updateQueque增加this实例" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-2" vertex="1">
+        <mxCell id="-YzyJ1zUxsTawbq-KKdj-6" value="+ emitUpdate：判断是同步还是异步,执行&#xa;updateComponent()&#xa; 1）若是同步，直接执行updateComponent&#xa;2）若是异步，向updateQueque增加this实例" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-2" vertex="1">
           <mxGeometry y="150" width="247" height="80" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-10" value="+ updateComponent()： 执行shouldUpdate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-2" vertex="1">
@@ -359,13 +362,16 @@
           <mxGeometry x="-220" y="577.5" width="320" height="20" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-29" value="forceUpdate" style="swimlane;fontColor=#FF0000;align=center;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="1045.5" y="-115" width="307.5" height="170" as="geometry" />
+          <mxGeometry x="1045.5" y="-115" width="318" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="-YzyJ1zUxsTawbq-KKdj-30" value="1. 通过实例拿到老的dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-29" vertex="1">
-          <mxGeometry x="15" y="30" width="150" height="20" as="geometry" />
+        <mxCell id="__hmejqqHvT5zN9v6oVc-114" value="&lt;font style=&quot;font-size: 10px&quot;&gt;getDerivedStateFromProps&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="-YzyJ1zUxsTawbq-KKdj-29">
+          <mxGeometry x="198" y="45" width="120" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="-YzyJ1zUxsTawbq-KKdj-31" value="2. 通过老的dom拿到老的vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-29" vertex="1">
-          <mxGeometry x="15" y="50" width="180" height="20" as="geometry" />
+        <mxCell id="-YzyJ1zUxsTawbq-KKdj-30" value="1. 通过实例上的oldRenderVdom拿到老的Vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-29" vertex="1">
+          <mxGeometry x="13" y="30" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="-YzyJ1zUxsTawbq-KKdj-31" value="2. 通过老的Vdom拿到老的Dom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-29" vertex="1">
+          <mxGeometry x="18" y="50" width="180" height="20" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-32" value="3.通过render方法拿到新的vdom" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-29" vertex="1">
           <mxGeometry x="13" y="70" width="190" height="20" as="geometry" />
@@ -378,6 +384,9 @@
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-11" value="&lt;font color=&quot;#000000&quot;&gt;6. 在更新完毕之后，&lt;br&gt;判断是否有componentDidupdate&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="-YzyJ1zUxsTawbq-KKdj-29">
           <mxGeometry x="22" y="132" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6tmg5CgnIUSu8YpfDWt--1" value="&lt;span style=&quot;font-size: 10px&quot;&gt;getSnapShot&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="-YzyJ1zUxsTawbq-KKdj-29">
+          <mxGeometry x="198" y="67.5" width="120" height="25" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-34" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontColor=#331A00;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.114;exitY=-0.067;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-YzyJ1zUxsTawbq-KKdj-15" target="-YzyJ1zUxsTawbq-KKdj-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -392,7 +401,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-37" value="" style="swimlane;startSize=0;fontColor=#331A00;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="1373" y="-90" width="290" height="120" as="geometry" />
+          <mxGeometry x="1404" y="-90" width="290" height="120" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-38" value="iisBAthcingUpdate: 默认false，判断是否批量更新" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="-YzyJ1zUxsTawbq-KKdj-37" vertex="1">
           <mxGeometry y="10" width="280" height="20" as="geometry" />
@@ -404,7 +413,7 @@
           <mxGeometry x="10" y="77" width="260" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-39" value="updateQueque：接受异步的updater实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#331A00;" parent="1" vertex="1">
-          <mxGeometry x="1373" y="-110" width="230" height="20" as="geometry" />
+          <mxGeometry x="1404" y="-110" width="230" height="20" as="geometry" />
         </mxCell>
         <mxCell id="-YzyJ1zUxsTawbq-KKdj-42" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontColor=#331A00;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.854;exitY=0.016;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-YzyJ1zUxsTawbq-KKdj-6" target="-YzyJ1zUxsTawbq-KKdj-37" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -413,27 +422,30 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-5" value="shouldUpdate" style="swimlane;fontStyle=0" vertex="1" parent="1">
-          <mxGeometry x="1285" y="530" width="260" height="185" as="geometry" />
+          <mxGeometry x="1285" y="530" width="260" height="210" as="geometry" />
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-6" value="1. 判断有没有shouldComponentUpdate方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
-          <mxGeometry y="35.5" width="250" height="20" as="geometry" />
+          <mxGeometry y="56.5" width="250" height="20" as="geometry" />
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-7" value="2. 判断有没有componentWillUpdate方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
-          <mxGeometry y="62" width="230" height="20" as="geometry" />
+          <mxGeometry y="83" width="230" height="20" as="geometry" />
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-8" value="3.&amp;nbsp;&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;&amp;nbsp;先把新状态赋给类的实例上&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;classInstance.state = nextState;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
-          <mxGeometry x="-6" y="90" width="190" height="30" as="geometry" />
+          <mxGeometry x="-6" y="111" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-9" value="4. 根据之前的结果，更新&lt;span style=&quot;color: rgb(51 , 26 , 0) ; text-align: left&quot;&gt;强制更新：&lt;br&gt;classInstance.forceUpdate()&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
-          <mxGeometry y="130" width="210" height="30" as="geometry" />
+          <mxGeometry y="151" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="__hmejqqHvT5zN9v6oVc-115" value="&lt;span style=&quot;font-size: 12px&quot;&gt;参数：classInstance, this.getState()&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#33001A;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-5">
+          <mxGeometry x="10" y="30" width="210" height="20" as="geometry" />
         </mxCell>
         <mxCell id="weNoOUtVQdzom_qqq5Kr-16" value="把虚拟dom转换成真实dom，追加到容器上" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="730" y="120" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-16" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=0.421;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="__hmejqqHvT5zN9v6oVc-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1600" y="910" as="sourcePoint" />
-            <mxPoint x="1600" y="900" as="targetPoint" />
+            <mxPoint x="1600" y="911" as="sourcePoint" />
+            <mxPoint x="1600" y="901" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
@@ -576,7 +588,7 @@
           <mxGeometry x="-80" y="780" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-74" value="updateClassComponent" style="swimlane;fontColor=#000000;strokeColor=#000000;startSize=23;fontStyle=0" vertex="1" parent="1">
-          <mxGeometry x="98.75" y="-640" width="232.5" height="220" as="geometry" />
+          <mxGeometry x="98.75" y="-640" width="232.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="__hmejqqHvT5zN9v6oVc-75" value="1. 将旧vdom的classInstance放置&lt;br&gt;到新的vdom上" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="__hmejqqHvT5zN9v6oVc-74">
           <mxGeometry x="10" y="60" width="190" height="30" as="geometry" />
@@ -785,6 +797,14 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram name="Hook" id="0F-UeJeivZCjDcLkhR-p">
+    <mxGraphModel dx="931" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="HpFTglp4zqe5_hnwRGNC-0" />
+        <mxCell id="HpFTglp4zqe5_hnwRGNC-1" parent="HpFTglp4zqe5_hnwRGNC-0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram name="Storage" id="vV0q5oGskRY3qe2wI6SU">
     <mxGraphModel dx="1426" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -865,14 +885,6 @@
         <mxCell id="PMbcFlbeFz1-OWCJhIBh-24" value="&lt;div style=&quot;&quot;&gt;&lt;span&gt;协作2.5&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="VbPkJTm2Ocjr7nHQW96n-1">
           <mxGeometry x="640" y="80" width="60" height="30" as="geometry" />
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram name="Hook" id="0F-UeJeivZCjDcLkhR-p">
-    <mxGraphModel dx="1426" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="HpFTglp4zqe5_hnwRGNC-0" />
-        <mxCell id="HpFTglp4zqe5_hnwRGNC-1" parent="HpFTglp4zqe5_hnwRGNC-0" />
       </root>
     </mxGraphModel>
   </diagram>
